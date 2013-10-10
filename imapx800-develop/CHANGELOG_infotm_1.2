@@ -1,0 +1,1452 @@
+------------------------------------------------------------------------
+r312 | warits | 2009-12-05 15:11:48 +0800 (Sat, 05 Dec 2009) | 1 line
+
+Newly imported u-boot-2009.08 for imapx200 development.
+------------------------------------------------------------------------
+r331 | warits | 2009-12-17 19:42:04 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/Makefile
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/config.mk
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/reset.S
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/speed.c
+   A /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/timer.c
+
+Initialized: cpu relavent file for iMAPx200
+------------------------------------------------------------------------
+r332 | warits | 2009-12-17 19:42:47 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/Makefile
+
+Modified: modified Make to add imapx configuration
+------------------------------------------------------------------------
+r333 | warits | 2009-12-17 19:44:03 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+
+Initialized: arch-imapx200 relavent files
+------------------------------------------------------------------------
+r334 | warits | 2009-12-17 19:45:47 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/common.h
+
+Modified: add asm/arch/imapx200.h to common.h
+------------------------------------------------------------------------
+r335 | warits | 2009-12-17 19:46:42 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Initialized: Add iMAPx200 main config file
+------------------------------------------------------------------------
+r336 | warits | 2009-12-17 19:49:35 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+Initialized: imapx20 NAND driver
+------------------------------------------------------------------------
+r337 | warits | 2009-12-17 19:50:07 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/Makefile
+
+Modified: modified drivers/mtd/nand/Makefile to add imapx200 NAND driver
+------------------------------------------------------------------------
+r338 | warits | 2009-12-17 19:51:17 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm
+   A /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx
+   A /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+   A /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/config.mk
+   A /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+   A /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/u-boot.lds
+
+Initialized: iMAPx200 NAND_SPL
+------------------------------------------------------------------------
+r339 | warits | 2009-12-17 19:55:57 +0800 (Thu, 17 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/Makefile
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/config.mk
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/imapx.c
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   A /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/u-boot-nand.lds
+
+Initialized: add board relavent files to board/infotm
+------------------------------------------------------------------------
+r340 | warits | 2009-12-18 11:33:26 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/reset.S
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/speed.c
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/timer.c
+
+Modified: modified files to pass compile
+------------------------------------------------------------------------
+r341 | warits | 2009-12-18 11:34:30 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+
+Fixed: NAND registers macro err
+------------------------------------------------------------------------
+r342 | warits | 2009-12-18 11:36:51 +0800 (Fri, 18 Dec 2009) | 2 lines
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: Add cfg_cs8900, disable ext2, imls, disabled flash(nor? cfi?), disabled usb
+
+------------------------------------------------------------------------
+r343 | warits | 2009-12-18 11:37:45 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/Makefile
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/imapx.c
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/u-boot-nand.lds
+
+Modified: board/infotm/imapx/* to pass compile
+------------------------------------------------------------------------
+r344 | warits | 2009-12-18 11:38:24 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: Added hang function to NAND_SPL
+------------------------------------------------------------------------
+r345 | warits | 2009-12-18 11:40:00 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+
+Modified: Add AFLAGS, CFLAGS CONFIG_PRELOAD to compile nand_spl, this is a arm1136 style start.S requirement
+------------------------------------------------------------------------
+r346 | warits | 2009-12-18 11:41:37 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/serial/Makefile
+   A /venus/branches/warits-branch/imap-u-boot/drivers/serial/serial_imapx200.c
+
+Initialized: Add serial driver skeleton to pass compile
+------------------------------------------------------------------------
+r347 | warits | 2009-12-18 11:43:39 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+FIXED: some coding bug in NAND driver
+------------------------------------------------------------------------
+r348 | warits | 2009-12-18 11:49:23 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/CHANGELOG_infotm
+
+** First compilable version
+------------------------------------------------------------------------
+r349 | zata | 2009-12-18 15:51:30 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+
+head file modified
+------------------------------------------------------------------------
+r350 | zata | 2009-12-18 15:51:55 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/serial/serial_imapx200.c
+
+uart driver
+------------------------------------------------------------------------
+r351 | warits | 2009-12-18 18:01:43 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: add disable lowlevel_init option
+------------------------------------------------------------------------
+r352 | warits | 2009-12-18 18:02:30 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/imapx.c
+
+Modified: imap board init function
+------------------------------------------------------------------------
+r353 | warits | 2009-12-18 18:03:28 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_base_reg.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_gpio.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_keybd.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_lcd.dev
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_mac.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_nand.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_pwm.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_rtc.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_sysmgr.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_timer.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_uart.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_usbhost.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_usbotg.h
+
+Added: uart, gpio, keybd, mac, nand, timer, pwm, usbotg, sysmgr, usbhost, rtc, lcd registers
+------------------------------------------------------------------------
+r354 | warits | 2009-12-18 20:28:53 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+   M /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_uart.h
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: Update configurations
+------------------------------------------------------------------------
+r355 | warits | 2009-12-18 20:47:35 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: Added FPGA TEST option
+------------------------------------------------------------------------
+r356 | warits | 2009-12-18 20:48:02 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/speed.c
+
+Modified: cpu/arm1136/imapx200/speed.c to fit iMAPx200
+------------------------------------------------------------------------
+r357 | warits | 2009-12-18 20:48:47 +0800 (Fri, 18 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/reset.S
+
+Modified: decrease cpu/arm1136/imapx200/reset.S to pass compile
+------------------------------------------------------------------------
+r358 | warits | 2009-12-21 10:13:22 +0800 (Mon, 21 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/timer.c
+
+Modified: Add iMAPx200 timer functions
+------------------------------------------------------------------------
+r359 | warits | 2009-12-21 10:13:43 +0800 (Mon, 21 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/speed.c
+
+Modified: cpu/arm1136/imapx200/speed.c
+------------------------------------------------------------------------
+r360 | warits | 2009-12-21 10:14:57 +0800 (Mon, 21 Dec 2009) | 1 line
+Changed paths:
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_extern.h
+
+Added: iMAPx200 functions declaration
+------------------------------------------------------------------------
+r361 | warits | 2009-12-21 10:16:03 +0800 (Mon, 21 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: fixed some warnings
+------------------------------------------------------------------------
+r362 | warits | 2009-12-21 10:30:17 +0800 (Mon, 21 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/reset.S
+
+Modified: Add iMAPx200 reset_cpu function
+------------------------------------------------------------------------
+r363 | hjf | 2009-12-21 22:01:51 +0800 (Mon, 21 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/Makefile
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/speed.c
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /venus/branches/warits-branch/imap-u-boot/drivers/serial/serial_imapx200.c
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+   M /venus/branches/warits-branch/imap-u-boot/lib_arm/board.c
+
+Daily build: 20091221
+------------------------------------------------------------------------
+r364 | warits | 2009-12-22 10:41:37 +0800 (Tue, 22 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: delete NAND debug infomation
+------------------------------------------------------------------------
+r365 | warits | 2009-12-22 14:53:36 +0800 (Tue, 22 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/reset.S
+   M /venus/branches/warits-branch/imap-u-boot/lib_arm/board.c
+
+Modified: reset function, delete redunctant code in baudrate init
+------------------------------------------------------------------------
+r369 | warits | 2009-12-23 09:34:53 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+Modified: Add iMAPx200 mem_ctrl_asm_init
+------------------------------------------------------------------------
+r370 | warits | 2009-12-23 09:35:10 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/common/cmd_nand.c
+
+Modified: nand dbg
+------------------------------------------------------------------------
+r371 | warits | 2009-12-23 14:29:43 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+Modified: NAND init code, clear lock, cmd & add sending changed to 8bit
+------------------------------------------------------------------------
+r372 | warits | 2009-12-23 14:36:57 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/common/cmd_nand.c
+
+Modified: Clean dbg code
+------------------------------------------------------------------------
+r373 | warits | 2009-12-23 14:56:35 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+Modified: cpu_init.S lisence
+------------------------------------------------------------------------
+r374 | warits | 2009-12-23 15:18:34 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+Modified: cpu/arm1136/imapx200/cpu_init.S code style
+------------------------------------------------------------------------
+r375 | warits | 2009-12-23 21:07:29 +0800 (Wed, 23 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: update configuration, machid=0x8f8
+------------------------------------------------------------------------
+r376 | warits | 2009-12-24 16:40:09 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/start.S
+
+Modified: iMAPx200 init codes
+------------------------------------------------------------------------
+r377 | warits | 2009-12-24 16:40:33 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: Add configuration CONFIG-HAVE_PRELOADER
+------------------------------------------------------------------------
+r378 | warits | 2009-12-24 20:14:08 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+Modified: added SDRAM init
+------------------------------------------------------------------------
+r379 | warits | 2009-12-24 20:14:33 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: Added system meory type selection
+------------------------------------------------------------------------
+r380 | warits | 2009-12-24 20:14:52 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+   A /venus/branches/warits-branch/imap-u-boot/include/asm-arm/arch-imapx200/imapx_emif.h
+
+Added: EMIF registers
+------------------------------------------------------------------------
+r381 | warits | 2009-12-24 20:15:45 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+BUGFIX: NAND write reverted data
+------------------------------------------------------------------------
+r382 | warits | 2009-12-24 20:21:50 +0800 (Thu, 24 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/CHANGELOG_infotm
+
+Update: change_log
+------------------------------------------------------------------------
+r387 | warits | 2009-12-25 15:32:24 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/start.S
+
+Modified: preloader & ture-u-boot both clear bss\n Stack_setup para changed to CONFIG_SYS_PHY_UBOOT_BASE, not TEXT_BASE\nor else preload got wrong stack pointer
+------------------------------------------------------------------------
+r388 | warits | 2009-12-25 15:33:34 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+
+Modified: WDT disable, xxx acc disable
+------------------------------------------------------------------------
+r389 | warits | 2009-12-25 15:39:22 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: code fix
+------------------------------------------------------------------------
+r390 | warits | 2009-12-25 15:46:17 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: code fix
+------------------------------------------------------------------------
+r392 | warits | 2009-12-25 15:51:15 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/CHANGELOG_infotm
+
+Update: changlog
+------------------------------------------------------------------------
+r393 | warits | 2009-12-25 15:52:07 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/Makefile
+
+Modified: clean Makefile
+------------------------------------------------------------------------
+r394 | warits | 2009-12-25 16:22:45 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/CHANGELOG_infotm
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: NAND_SPL debug code
+------------------------------------------------------------------------
+r395 | warits | 2009-12-25 19:00:01 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/Makefile
+
+Modified: modify makefile to generate RAM_TEXT automatically, from config.h
+------------------------------------------------------------------------
+r396 | warits | 2009-12-25 19:00:15 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: configuration modified
+------------------------------------------------------------------------
+r397 | warits | 2009-12-25 19:37:25 +0800 (Fri, 25 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+Modified: add filter to deal with the small kindly bug that iMAPx200 treat a free page as uncorrectable error
+------------------------------------------------------------------------
+r398 | warits | 2009-12-26 11:23:50 +0800 (Sat, 26 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: fix ddr2 init, update config
+------------------------------------------------------------------------
+r399 | warits | 2009-12-28 14:49:31 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/cpu/arm1136/imapx200/speed.c
+
+Modified: CLK printinfo
+------------------------------------------------------------------------
+r400 | warits | 2009-12-28 14:50:30 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/include/configs/imapx.h
+
+Modified: change config, SDRAM, no boardinfo, eccbytes 12
+------------------------------------------------------------------------
+r401 | warits | 2009-12-28 14:51:08 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/lib_arm/board.c
+
+Modified: DDR2 printinfo
+------------------------------------------------------------------------
+r402 | warits | 2009-12-28 14:51:51 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/Makefile
+
+Modified: used securer method to write RAM_TEXT
+------------------------------------------------------------------------
+r403 | warits | 2009-12-28 14:52:30 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+BUGFIX: preloader nand_load ECC error
+------------------------------------------------------------------------
+r404 | warits | 2009-12-28 14:52:44 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/drivers/mtd/nand/nand_util.c
+
+BUGFIX: llx printf bug
+------------------------------------------------------------------------
+r405 | warits | 2009-12-28 14:55:23 +0800 (Mon, 28 Dec 2009) | 1 line
+Changed paths:
+   M /venus/branches/warits-branch/imap-u-boot/CHANGELOG_infotm
+
+Version: alpha v 1.0.405
+------------------------------------------------------------------------
+Sat Jan 16, 2010, by bob.yang
+
+Network support added. Using GMAC.
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/Makefile
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_mac.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/net.c
+------------------------------------------------------------------------
+r527 | warits | 2010-01-21 16:23:16 +0800 (Thu, 21 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/CHANGELOG_infotm
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_nand.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Modified: NAND driver, bitfix bug fix, MLC debug, configs, logs
+------------------------------------------------------------------------
+r530 | warits | 2010-01-21 16:44:16 +0800 (Thu, 21 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+Modified: NAND driver new freepage method
+------------------------------------------------------------------------
+r564 | warits | 2010-01-23 13:57:39 +0800 (Sat, 23 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+Modified: NAND driver, mlc_bitfix adjusted
+------------------------------------------------------------------------
+r570 | warits | 2010-01-25 09:48:24 +0800 (Mon, 25 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: NAND driver MLC
+------------------------------------------------------------------------
+r578 | warits | 2010-01-25 15:29:28 +0800 (Mon, 25 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+Modified: unaligned address u_char->u_long problem, changed ecc writing method from 32bit to 8bit, MLC use 9 bytes ECC
+------------------------------------------------------------------------
+r579 | warits | 2010-01-25 16:00:09 +0800 (Mon, 25 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+4KB page, MLC ECC OK, debug off
+------------------------------------------------------------------------
+r580 | warits | 2010-01-25 16:14:09 +0800 (Mon, 25 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+configuration: 2k, 4k, mlc, slc
+------------------------------------------------------------------------
+r589 | warits | 2010-01-26 14:20:25 +0800 (Tue, 26 Jan 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Modified: Preloader nfmeccd write method 32bit->8bit
+------------------------------------------------------------------------
+r732 | warits | 2010-02-01 17:28:11 +0800 (Mon, 01 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/imapx.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/Makefile
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c (from /imapx200/bsp-develop/branches/fjx1982441-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c:729)
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/infotm_logo.h (from /imapx200/bsp-develop/branches/fjx1982441-branch/linux/imap-u-boot/drivers/video/infotm_logo.h:729)
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_lcd.h (from /imapx200/bsp-develop/branches/fjx1982441-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_lcd.h:729)
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/lcd.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+
+Update: LCD driver added by fjx
+------------------------------------------------------------------------
+r741 | warits | 2010-02-01 20:37:48 +0800 (Mon, 01 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+
+Update: add OEM functions to display logo
+------------------------------------------------------------------------
+r742 | warits | 2010-02-01 20:49:32 +0800 (Mon, 01 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+
+Modified: relocated pic structure positions to get rid of warnnings
+------------------------------------------------------------------------
+r743 | warits | 2010-02-01 20:56:06 +0800 (Mon, 01 Feb 2010) | 1 line
+Changed paths:
+   D /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/infotm_logo.h
+   D /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_lcd.dev
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Modified: deleted files, modified nand u-boot length to 256K as its size increased
+------------------------------------------------------------------------
+r749 | hjf | 2010-02-02 14:08:48 +0800 (Tue, 02 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/imapx.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+oem_logo, u-boot mem offset changed, make file not changed
+------------------------------------------------------------------------
+r754 | warits | 2010-02-02 18:41:30 +0800 (Tue, 02 Feb 2010) | 1 line
+Changed paths:
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/tools/boot_addr.c
+
+Add c script to show u-boot ram load addr
+------------------------------------------------------------------------
+r755 | warits | 2010-02-02 18:42:35 +0800 (Tue, 02 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Modified, configuration file imapx.h structure improved
+------------------------------------------------------------------------
+r757 | warits | 2010-02-02 18:58:40 +0800 (Tue, 02 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/nfs.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/tftp.c
+
+Modified: nfs and tftp changed to # to MB transferred
+------------------------------------------------------------------------
+r759 | warits | 2010-02-02 19:45:35 +0800 (Tue, 02 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_nand.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Update: add nand SDMA support
+------------------------------------------------------------------------
+r760 | warits | 2010-02-02 20:24:31 +0800 (Tue, 02 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Add OEM cmds to make things more convenient
+------------------------------------------------------------------------
+r770 | warits | 2010-02-03 09:51:51 +0800 (Wed, 03 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+
+change variable to static by b2b
+------------------------------------------------------------------------
+r788 | warits | 2010-02-05 14:02:35 +0800 (Fri, 05 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_denali.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/denali_test.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Updated: add imap dev board configuration 
+------------------------------------------------------------------------
+r791 | warits | 2010-02-06 16:54:42 +0800 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/speed.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/timer.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/start.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+Updated imapx200 dev board mem init
+------------------------------------------------------------------------
+r793 | warits | 2010-02-06 19:32:30 +0800 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+
+Add RnB check method to avoid CMD no succeed
+------------------------------------------------------------------------
+r794 | warits | 2010-02-06 20:15:17 +0800 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+config to display bootdelay
+------------------------------------------------------------------------
+r795 | warits | 2010-02-06 20:17:43 +0800 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+
+modify compiler
+------------------------------------------------------------------------
+r796 | warits | 2010-02-06 20:55:10 +0800 (Sat, 06 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+
+lcd fix, acc on
+------------------------------------------------------------------------
+r797 | warits | 2010-02-07 09:33:28 +0800 (Sun, 07 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+move logo locate
+------------------------------------------------------------------------
+r834 | hjf | 2010-02-09 20:54:57 +0800 (Tue, 09 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_nand.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+NAND SDMA OK, add bootw cmd
+------------------------------------------------------------------------
+r841 | hjf | 2010-02-23 11:00:31 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+add product board meminit
+------------------------------------------------------------------------
+r842 | hjf | 2010-02-23 11:02:15 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/net.c
+
+add product board gpio config 
+------------------------------------------------------------------------
+r843 | hjf | 2010-02-23 11:02:59 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+
+Macro defined CLK config
+------------------------------------------------------------------------
+r844 | hjf | 2010-02-23 11:03:30 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+NAND secure timing, 131
+------------------------------------------------------------------------
+r845 | hjf | 2010-02-23 11:04:09 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+
+ LCD, product board gpio config
+------------------------------------------------------------------------
+r846 | hjf | 2010-02-23 13:27:22 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/net.c
+
+net delay resume, nand eccdone delay
+------------------------------------------------------------------------
+r849 | warits | 2010-02-23 16:18:29 +0800 (Tue, 23 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+
+modify gmac into 100FD
+------------------------------------------------------------------------
+r860 | hjf | 2010-02-26 11:13:31 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+product board memory adjust(12,f), dev board 600_200 added
+------------------------------------------------------------------------
+r861 | hjf | 2010-02-26 11:14:29 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_lcd.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/lcd.h
+
+lcd driver updated, alpha & fb1 added, pro dev power on
+------------------------------------------------------------------------
+r862 | hjf | 2010-02-26 11:16:03 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+fb1 mem resv
+------------------------------------------------------------------------
+r863 | hjf | 2010-02-26 11:17:34 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   D /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/denali_test.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/study_micron.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/study_samsung.c
+
+mem study code
+------------------------------------------------------------------------
+r864 | hjf | 2010-02-26 11:17:55 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+
+spl Makefile
+------------------------------------------------------------------------
+r865 | hjf | 2010-02-26 11:19:03 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+
+net driver update, 10m, 100m autofit, wait phy reset
+------------------------------------------------------------------------
+r867 | warits | 2010-02-26 13:27:55 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_util.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_wince_pic.h
+
+wince bootface added, not debuged
+------------------------------------------------------------------------
+r869 | warits | 2010-02-26 19:01:38 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_util.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/lcd.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+
+bootface added
+------------------------------------------------------------------------
+r870 | hjf | 2010-02-26 19:13:53 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+CLK config manual mode added
+------------------------------------------------------------------------
+r873 | hjf | 2010-02-26 19:45:11 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+config to product board
+------------------------------------------------------------------------
+r874 | hjf | 2010-02-26 19:45:38 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+
+delete press F8 informatino
+------------------------------------------------------------------------
+r875 | hjf | 2010-02-26 20:06:34 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+
+accelarate prog bar
+------------------------------------------------------------------------
+r876 | hjf | 2010-02-26 22:28:43 +0800 (Fri, 26 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_wince_pic.h
+
+bootface update
+------------------------------------------------------------------------
+r878 | hjf | 2010-02-27 13:32:37 +0800 (Sat, 27 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+dev board memory adjusted
+------------------------------------------------------------------------
+r879 | hjf | 2010-02-27 15:17:48 +0800 (Sat, 27 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+dev board memory config, 4 mode added
+------------------------------------------------------------------------
+r880 | warits | 2010-02-27 17:53:20 +0800 (Sat, 27 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/stdio.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/Makefile
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_keybd.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/keyboard.h
+
+keyboard driver by zhjun
+------------------------------------------------------------------------
+r881 | hjf | 2010-02-27 18:04:26 +0800 (Sat, 27 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/start.S
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_wince.h
+
+WinCE wakeup code, asm in start.S
+------------------------------------------------------------------------
+r882 | hjf | 2010-02-27 18:05:06 +0800 (Sat, 27 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx200.h
+
+wince wakeup header file
+------------------------------------------------------------------------
+r883 | hjf | 2010-02-27 18:05:49 +0800 (Sat, 27 Feb 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+dev board clk information
+------------------------------------------------------------------------
+r884 | hjf | 2010-03-01 11:43:55 +0800 (Mon, 01 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/start.S
+
+wince wakeup code improved to support softrst
+------------------------------------------------------------------------
+r891 | warits | 2010-03-02 14:48:59 +0800 (Tue, 02 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+sys recorery and wince update support added
+------------------------------------------------------------------------
+r894 | warits | 2010-03-02 15:10:38 +0800 (Tue, 02 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+
+no link net 10s bug
+------------------------------------------------------------------------
+r896 | hjf | 2010-03-02 15:20:40 +0800 (Tue, 02 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+clk 450_150 added
+------------------------------------------------------------------------
+r901 | hjf | 2010-03-03 09:25:29 +0800 (Wed, 03 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+800_200 options added
+------------------------------------------------------------------------
+r932 | warits | 2010-03-05 16:22:47 +0800 (Fri, 05 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+
+modified kbd
+------------------------------------------------------------------------
+r939 | warits | 2010-03-08 11:18:02 +0800 (Mon, 08 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_font.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/fs/fat/fat.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/ft_verdana_13.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_font.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+
+for backing up, untested full of bug version
+------------------------------------------------------------------------
+r940 | warits | 2010-03-08 12:01:19 +0800 (Mon, 08 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/mmc.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+mmc temp driver added
+------------------------------------------------------------------------
+r950 | warits | 2010-03-08 18:49:15 +0800 (Mon, 08 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/mmc.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.c
+
+sd2
+------------------------------------------------------------------------
+r951 | warits | 2010-03-09 09:21:51 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.c
+
+SD driver added, 2GB tested, 4GB failed some times, need more test
+------------------------------------------------------------------------
+r952 | warits | 2010-03-09 09:22:13 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+
+keys added in kbd driver, lcd logo adj
+------------------------------------------------------------------------
+r953 | warits | 2010-03-09 09:22:26 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_util.c
+
+nand progress adjusted
+------------------------------------------------------------------------
+r954 | warits | 2010-03-09 09:22:45 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_mmc.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+
+oem functions improved
+------------------------------------------------------------------------
+r955 | warits | 2010-03-09 09:23:30 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+
+uboot main_loop options
+------------------------------------------------------------------------
+r956 | warits | 2010-03-09 09:24:02 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+add high-uboot mem reset
+------------------------------------------------------------------------
+r957 | warits | 2010-03-09 09:25:41 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/mmc.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/fs/fat/fat.c
+
+fat.c revert, mmc read progress
+------------------------------------------------------------------------
+r959 | warits | 2010-03-09 10:19:57 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/stdio.c
+
+delete lcd_init in basic-uboot
+------------------------------------------------------------------------
+r960 | hjf | 2010-03-09 10:43:14 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+clk 936 234 added
+------------------------------------------------------------------------
+r961 | warits | 2010-03-09 10:50:24 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+
+keyboard:add the other key
+------------------------------------------------------------------------
+r962 | warits | 2010-03-09 11:04:00 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+add double boot options
+------------------------------------------------------------------------
+r963 | warits | 2010-03-09 11:10:05 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+basic uboot bootdelay changed to zero
+------------------------------------------------------------------------
+r965 | warits | 2010-03-09 16:44:47 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+
+logo imediate display, turn off lcd_init in uboot1
+------------------------------------------------------------------------
+r966 | warits | 2010-03-09 16:45:18 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+
+logo imediate display
+------------------------------------------------------------------------
+r973 | warits | 2010-03-09 21:01:02 +0800 (Tue, 09 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+
+uboot1 nk update bugfix
+------------------------------------------------------------------------
+r977 | warits | 2010-03-10 09:43:59 +0800 (Wed, 10 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/mmc.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.h
+
+tian jia 4 bit gong neng
+------------------------------------------------------------------------
+r978 | warits | 2010-03-10 09:47:50 +0800 (Wed, 10 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+
+imapx200 product board kbd delay bug fix
+------------------------------------------------------------------------
+r980 | warits | 2010-03-10 11:10:23 +0800 (Wed, 10 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+MDDR added
+------------------------------------------------------------------------
+r981 | hjf | 2010-03-10 11:33:54 +0800 (Wed, 10 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+Removed, emif
+------------------------------------------------------------------------
+r989 | warits | 2010-03-11 11:26:48 +0800 (Thu, 11 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/mmc.c
+
+sd 4bit bug fixed
+------------------------------------------------------------------------
+r990 | hjf | 2010-03-11 14:36:14 +0800 (Thu, 11 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+clk 840_210_async added
+------------------------------------------------------------------------
+r994 | hjf | 2010-03-11 16:35:36 +0800 (Thu, 11 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+
+basic uboot delay to 0
+------------------------------------------------------------------------
+r996 | hjf | 2010-03-11 17:18:52 +0800 (Thu, 11 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_ids.c
+
+Micron NAND Chip FBNL63B59K3WG added
+------------------------------------------------------------------------
+r997 | hjf | 2010-03-11 17:42:40 +0800 (Thu, 11 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+
+bootw to 48M, nand delay down to 30us
+------------------------------------------------------------------------
+r1001 | warits | 2010-03-16 11:24:27 +0800 (Tue, 16 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_globl.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/mmc.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_util.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/fs/fat/fat.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+
+u1--mempool, untested
+------------------------------------------------------------------------
+r1007 | warits | 2010-03-17 10:39:11 +0800 (Wed, 17 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/board/infotm/imapx/lowlevel_init.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S
+
+Reverted to no basic version, mempool init deleted, LOWLEVEL_MAGIC deleted
+------------------------------------------------------------------------
+r1009 | warits | 2010-03-17 19:33:16 +0800 (Wed, 17 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/start.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/boot_main.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/crc32.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/img_check.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+preloader CRC32 check, nand_boot logic, usb-otg skeleton added, untested
+------------------------------------------------------------------------
+r1010 | warits | 2010-03-19 17:09:03 +0800 (Fri, 19 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_font.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_globl.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_graphic.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_pic.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_update.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mmc/sdhci-imap.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_font.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_graphic.h
+   D /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic_data.h (from /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h:1007)
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_wince_pic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/boot_main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/img_check.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/preloader.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/nfs.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/net/tftp.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/tools/boot_addr.c
+
+u-boot bootmethod improved, untested
+------------------------------------------------------------------------
+r1011 | warits | 2010-03-19 18:48:25 +0800 (Fri, 19 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_graphic.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_update.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+
+pic structure header file 
+------------------------------------------------------------------------
+r1012 | csl | 2010-03-19 19:46:16 +0800 (Fri, 19 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/asm-arm/arch-imapx200/imapx_usbotg.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/boot_main.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/usb-otg.c
+
+preloader usb-otg support
+------------------------------------------------------------------------
+r1015 | warits | 2010-03-21 15:21:20 +0800 (Sun, 21 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_fat.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_globl.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_graphic.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_pic.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_update.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_graphic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic_data.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_wince_pic.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/img_check.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/nand_boot.c
+
+u-boot wince method backup
+------------------------------------------------------------------------
+r1016 | hjf | 2010-03-21 17:47:31 +0800 (Sun, 21 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_update.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/boot_main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/img_check.c
+
+uboot wince method, backup
+------------------------------------------------------------------------
+r1017 | hjf | 2010-03-21 17:47:59 +0800 (Sun, 21 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+
+lcd poweron timing, backup
+------------------------------------------------------------------------
+r1028 | warits | 2010-03-22 21:59:55 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_mmu.c
+
+Add cache & mmu functions, ENABLE MMU AND CACHE
+------------------------------------------------------------------------
+r1029 | warits | 2010-03-22 22:00:30 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cache-flush.S
+
+Add cache & mmu functions, ENABLE MMU AND CACHE
+------------------------------------------------------------------------
+r1030 | warits | 2010-03-22 22:01:20 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_fat.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/speed.c
+
+Deleted printinfo
+------------------------------------------------------------------------
+r1031 | warits | 2010-03-22 22:02:26 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_update.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_graphic.h
+
+Add gunzip feature
+------------------------------------------------------------------------
+r1032 | warits | 2010-03-22 22:03:07 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/common.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/board.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/lib_arm/cache.c
+
+Enable cache & MMU
+------------------------------------------------------------------------
+r1033 | warits | 2010-03-22 22:03:40 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/imapx200.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/net/imapx200_gmac.c
+
+Add cache-flush to fit enabled dcache
+------------------------------------------------------------------------
+r1034 | warits | 2010-03-22 22:04:35 +0800 (Mon, 22 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+config files of mmu & cache
+------------------------------------------------------------------------
+r1037 | warits | 2010-03-23 16:43:33 +0800 (Tue, 23 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/img_check.c
+
+Add preloader crc32 size limit to avoid hang up on wrong header
+------------------------------------------------------------------------
+r1038 | warits | 2010-03-23 18:54:53 +0800 (Tue, 23 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_update.c
+
+Use standard way to treat image header
+------------------------------------------------------------------------
+r1040 | warits | 2010-03-24 16:28:39 +0800 (Wed, 24 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_nand.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_func.h
+
+add oem nand r/w/e function with the simplest bad block management
+------------------------------------------------------------------------
+r1041 | warits | 2010-03-24 16:29:28 +0800 (Wed, 24 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+
+LCD PWM Timer config
+------------------------------------------------------------------------
+r1042 | warits | 2010-03-24 19:47:17 +0800 (Wed, 24 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_nand.c
+
+oem_nand.c: skip bad alert
+------------------------------------------------------------------------
+r1044 | warits | 2010-03-24 20:16:50 +0800 (Wed, 24 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Delete verbose message for LCD
+------------------------------------------------------------------------
+r1046 | warits | 2010-03-24 22:06:04 +0800 (Wed, 24 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_nand.c
+
+erase before markbad to avoid mark failure
+------------------------------------------------------------------------
+r1050 | warits | 2010-03-25 11:06:24 +0800 (Thu, 25 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/cpu.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+bootm clean_up modified, fixed WHITE SCREEN problem, fixed disable cache problem
+------------------------------------------------------------------------
+r1051 | warits | 2010-03-25 14:27:58 +0800 (Thu, 25 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/reset.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/start.S
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/boot_main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/preloader.h
+
+Move reset check functions to reset.s, merged linux rst check functions
+------------------------------------------------------------------------
+r1052 | warits | 2010-03-25 14:29:10 +0800 (Thu, 25 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/Makefile
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_graphic.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_pic.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/oem_pic_data.h
+
+Add four product type: WINCE, LINUX, ANDROID, NONE
+------------------------------------------------------------------------
+r1053 | warits | 2010-03-25 14:59:54 +0800 (Thu, 25 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/input/imapx200_keybd.c
+
+KBD: Bug 'I' fixed
+------------------------------------------------------------------------
+r1054 | warits | 2010-03-29 11:46:43 +0800 (Mon, 29 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/cmd_oem.c
+
+REMOVED: bootz, bootl
+------------------------------------------------------------------------
+r1055 | warits | 2010-03-29 11:47:18 +0800 (Mon, 29 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_func.c
+
+ADD: kup cmd for updating linux kernel(uImage), LCD fitness to 100
+------------------------------------------------------------------------
+r1056 | warits | 2010-03-29 11:47:32 +0800 (Mon, 29 Mar 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/video/imapx200_lcd.c
+
+LCD fitness to 100
+------------------------------------------------------------------------
+r1074 | warits | 2010-04-02 16:14:53 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/reset.S
+
+WINCE wakeup ADDRESS changed to INFO0
+------------------------------------------------------------------------
+r1075 | hjf | 2010-04-02 16:17:46 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/oem_otg.c
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/nand_spl/board/infotm/imapx/usb-otg.c
+
+usb-otg backup
+------------------------------------------------------------------------
+r1076 | hjf | 2010-04-02 16:19:01 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/drivers/mtd/nand/nand_base.c
+
+Add nand_base debug information
+------------------------------------------------------------------------
+r1077 | hjf | 2010-04-02 16:19:24 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/common/main.c
+
+otg check code fix
+------------------------------------------------------------------------
+r1078 | hjf | 2010-04-02 16:20:56 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/include/configs/imapx.h
+
+Add 1008_252 clk, and zenithink 128MB ddr
+------------------------------------------------------------------------
+r1079 | hjf | 2010-04-02 16:23:02 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S_936_234_bak
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/cpu_init.S_ori_bak
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/imap_init.s
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/imap_init.s.sam_cl4_246M_DDR2_SYNC_OK_3.0304
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/imap_init.s.sam_cl4_264M_Powerup_NoInsP_3.0325
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/imap_init.s.samsung_32Mx16.0329
+   A /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/cpu/arm1136/imapx200/imap_init.s.zeni
+
+add denali config files
+------------------------------------------------------------------------
+r1082 | warits | 2010-04-02 19:54:44 +0800 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   M /imapx200/bsp-develop/branches/warits-branch/linux/imap-u-boot/Makefile
+
+Commit makefile before change to trunk
+------------------------------------------------------------------------

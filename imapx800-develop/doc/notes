@@ -1,0 +1,6 @@
+infotm X15 differents:
+
+* do not init_mux in uboot1, use mux state which is provided by iROM
+* 16 bit boot_info table
+* use virtual boot XOM which is passed from iROM
+* 16 bit boot_info for nandflash is different slightly (busw & pagesize)

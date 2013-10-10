@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+# Script to create header files and links to configure
+# U-Boot for a specific board.
+#
+# Parameters:  Target  Architecture  CPU  Board [VENDOR] [SOC]
+#
+# (C) 2002-2006 DENX Software Engineering, Wolfgang Denk <wd@denx.de>
+#
+
+echo "Preparing building environment ..."
+echo
+rm -rf out
+make list
+#echo -n "Please choose a product to make: "
+echo
+echo
+make 1.0.0.1 O=./out
+echo "Building ..."
+make O=./out -j 2 > /dev/null
+#make O=./out
+

@@ -1,0 +1,800 @@
+------------------------------------------------------------------------
+r206 | warits | 2010-06-30 01:42:32 +0000 (Wed, 30 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/tools/release/mk.oem
+   M /imap-uboot-union/tools/release/release.sh
+
+Updated release tools
+------------------------------------------------------------------------
+r205 | warits | 2010-06-29 14:11:19 +0000 (Tue, 29 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/tools/release
+   A /imap-uboot-union/tools/release/mk.main
+   A /imap-uboot-union/tools/release/mk.oem
+   A /imap-uboot-union/tools/release/release.sh
+
+Add release tools
+------------------------------------------------------------------------
+r204 | warits | 2010-06-29 12:42:04 +0000 (Tue, 29 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+   M /imap-uboot-union/include/configs/imap9901.h
+   A /imap-uboot-union/include/configs/imap_bn.h
+
+Update 9901 configuration file, Add configuration benigntech
+------------------------------------------------------------------------
+r203 | warits | 2010-06-29 01:55:05 +0000 (Tue, 29 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/drivers/serial/serial_imapx200.c
+
+Fixed serial3 BUG
+------------------------------------------------------------------------
+r202 | warits | 2010-06-28 11:42:30 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/asm-arm/arch-imapx200/denali_data/denali_ZT_0.8G264M.h
+   A /imap-uboot-union/include/asm-arm/arch-imapx200/denali_data/denali_ZT_1G264M.h
+
+Add two low quality denali config files
+------------------------------------------------------------------------
+r201 | warits | 2010-06-28 09:02:47 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/drivers/mtd/nand/imapx200.c
+
+Remove nand read delay, increase reading speed
+------------------------------------------------------------------------
+r200 | warits | 2010-06-28 08:59:04 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/doc/wince_setup.scr
+
+Add wince setup script
+------------------------------------------------------------------------
+r199 | warits | 2010-06-28 08:54:16 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+   A /imap-uboot-union/doc/android_setup.scr
+   M /imap-uboot-union/tools/Makefile
+   A /imap-uboot-union/tools/mkbootsd.c
+   A /imap-uboot-union/tools/sdheader.h
+
+Add tools mkbootsd
+------------------------------------------------------------------------
+r198 | warits | 2010-06-28 08:41:45 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+
+adr modified, user filesize as default size if not specified
+------------------------------------------------------------------------
+r197 | warits | 2010-06-28 08:40:37 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/func.c
+
+Change scr file CR to LF
+------------------------------------------------------------------------
+r196 | warits | 2010-06-28 08:39:59 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_mmc.c
+
+Modified mmc read to make it more secure
+------------------------------------------------------------------------
+r195 | warits | 2010-06-28 08:39:30 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/nand.c
+
+Move nand erase while burnning yaffs2 from burn_img to write_yaffs
+------------------------------------------------------------------------
+r194 | warits | 2010-06-28 03:54:32 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imapx.h
+   M /imap-uboot-union/oem/func.c
+
+Changed boot script method because the original is too dangerous
+------------------------------------------------------------------------
+r193 | warits | 2010-06-28 03:50:49 +0000 (Mon, 28 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+
+kup command is removed, adr function is enchanted
+------------------------------------------------------------------------
+r192 | warits | 2010-06-26 06:36:17 +0000 (Sat, 26 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/drivers/mmc/mmc.c
+   M /imap-uboot-union/drivers/mmc/sdhci-imap.c
+   M /imap-uboot-union/oem/func.c
+
+Improved SD driver message
+------------------------------------------------------------------------
+r191 | warits | 2010-06-25 13:19:14 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap_dev.h
+   M /imap-uboot-union/oem/func.c
+
+Update dev_board configuration file
+------------------------------------------------------------------------
+r190 | warits | 2010-06-25 12:47:19 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/main.c
+   M /imap-uboot-union/include/configs/imapx.h
+   M /imap-uboot-union/include/oem_func.h
+   M /imap-uboot-union/include/oem_graphic.h
+
+Remove abort boot from keyboard(now only from serial). New boot sequence: OTG->SD->NAND
+------------------------------------------------------------------------
+r189 | warits | 2010-06-25 12:45:00 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/func.c
+
+Add graphic display while burnning images. Add SD script functions
+------------------------------------------------------------------------
+r188 | warits | 2010-06-25 12:43:15 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/nand.c
+
+Add progress update in yaffs2 burn function
+------------------------------------------------------------------------
+r187 | warits | 2010-06-25 12:42:22 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/Makefile
+   A /imap-uboot-union/oem/progress.c
+
+Add a simple progress bar
+------------------------------------------------------------------------
+r186 | warits | 2010-06-25 12:41:38 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+   M /imap-uboot-union/include/oem_pic.h
+   M /imap-uboot-union/include/oem_wince_pic.h
+   M /imap-uboot-union/oem/graphic.c
+   M /imap-uboot-union/oem/pic.c
+
+Removed orignal wince update function, so as to relavent pictures and wup command.
+------------------------------------------------------------------------
+r185 | warits | 2010-06-25 03:34:16 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/oem_func.h
+   M /imap-uboot-union/oem/func.c
+   M /imap-uboot-union/oem/nand.c
+
+Add function: oem_clear_env, change oem_clear_badblock to a fixed range
+------------------------------------------------------------------------
+r184 | warits | 2010-06-25 03:26:20 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/oem_func.h
+   M /imap-uboot-union/oem/func.c
+   M /imap-uboot-union/oem/nand.c
+
+Add functions: clear_badblock & burn_U0
+------------------------------------------------------------------------
+r183 | warits | 2010-06-25 02:23:58 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+   M /imap-uboot-union/oem/linux.c
+
+Fixed a bug, Now USB debug mode can boot kernel successfully
+------------------------------------------------------------------------
+r182 | warits | 2010-06-25 02:16:56 +0000 (Fri, 25 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+
+Removed version folder auto generation, enchanted make clean
+------------------------------------------------------------------------
+r181 | warits | 2010-06-23 12:57:14 +0000 (Wed, 23 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap7901_wince.h
+
+Up 7901 wince configuration to date
+------------------------------------------------------------------------
+r180 | warits | 2010-06-23 03:30:21 +0000 (Wed, 23 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/nand_spl/board/infotm/imapx/usb-otg.c
+   M /imap-uboot-union/oem/otg.c
+
+Remove usb warnning
+------------------------------------------------------------------------
+r179 | warits | 2010-06-23 03:24:46 +0000 (Wed, 23 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/nand_spl/board/infotm/imapx/usb-otg.c
+   M /imap-uboot-union/oem/otg.c
+
+Modified USB timing
+------------------------------------------------------------------------
+r178 | warits | 2010-06-22 12:14:51 +0000 (Tue, 22 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/func.c
+   M /imap-uboot-union/oem/wince.c
+
+Fixed nand_burn pad bug, pad data to 8K larger
+------------------------------------------------------------------------
+r177 | warits | 2010-06-21 11:22:56 +0000 (Mon, 21 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/linux.c
+
+Fixed bootm ramdisk address, 0x40 offset
+------------------------------------------------------------------------
+r176 | warits | 2010-06-21 10:29:02 +0000 (Mon, 21 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/nand_spl/board/infotm/imapx/usb-otg.c
+   M /imap-uboot-union/oem/otg.c
+
+Modified otg macro to fit both orignal otg method(set gpio) & new otg method(check gpio)
+------------------------------------------------------------------------
+r175 | warits | 2010-06-21 10:15:39 +0000 (Mon, 21 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap7901_linux.h
+   M /imap-uboot-union/oem/linux.c
+
+Modified oem_bootl function to enable cpio ramdisk
+------------------------------------------------------------------------
+r174 | warits | 2010-06-21 08:20:40 +0000 (Mon, 21 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap9901.h
+
+9901 configuration file updated
+------------------------------------------------------------------------
+r173 | warits | 2010-06-21 08:20:26 +0000 (Mon, 21 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/otg.c
+
+Add OTG check GPIO in both preloader and u-boot.bin
+------------------------------------------------------------------------
+r172 | warits | 2010-06-21 08:19:50 +0000 (Mon, 21 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/nand_spl/board/infotm/imapx/usb-otg.c
+
+Add OTG check GPIO in both preloader and u-boot.bin
+------------------------------------------------------------------------
+r171 | warits | 2010-06-18 10:06:56 +0000 (Fri, 18 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap7901_linux.h
+   M /imap-uboot-union/oem/func.c
+
+bootargs for p7901a linux
+------------------------------------------------------------------------
+r170 | warits | 2010-06-18 08:55:23 +0000 (Fri, 18 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+
+Makefile revert
+------------------------------------------------------------------------
+r169 | warits | 2010-06-18 08:53:19 +0000 (Fri, 18 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/func.c
+
+Add menukey recovery flag for p7901a
+------------------------------------------------------------------------
+r168 | warits | 2010-06-18 07:25:11 +0000 (Fri, 18 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+   M /imap-uboot-union/oem/otg.c
+
+android rep - ndisk&ramdisk
+------------------------------------------------------------------------
+r167 | warits | 2010-06-17 13:58:59 +0000 (Thu, 17 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+   M /imap-uboot-union/include/configs/imap_dev.h
+   M /imap-uboot-union/oem/func.c
+
+Fix some output message, ramdisk size to 4M
+------------------------------------------------------------------------
+r166 | warits | 2010-06-17 13:31:27 +0000 (Thu, 17 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+
+bootl function
+------------------------------------------------------------------------
+r165 | warits | 2010-06-17 13:30:09 +0000 (Thu, 17 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap_dev.h
+   M /imap-uboot-union/include/configs/imapx.h
+   M /imap-uboot-union/include/oem_func.h
+
+Add ramdisk relavent configurations
+------------------------------------------------------------------------
+r164 | warits | 2010-06-17 13:29:10 +0000 (Thu, 17 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/func.c
+
+add common load_img and burn_img function, simplfied burn_IMG functions base on oem_burn_img, add check recovery
+------------------------------------------------------------------------
+r163 | warits | 2010-06-17 13:27:38 +0000 (Thu, 17 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/oem/linux.c
+
+up_uimage removed, simplfied load_IMG functions based on oem_load_img
+------------------------------------------------------------------------
+r162 | warits | 2010-06-17 02:30:43 +0000 (Thu, 17 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap9901.h
+   M /imap-uboot-union/include/configs/imap_coby.h
+   M /imap-uboot-union/include/configs/imap_ebook.h
+
+Modified frequence for ebook, coby, 9901
+------------------------------------------------------------------------
+r161 | warits | 2010-06-08 01:13:58 +0000 (Tue, 08 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imap_jd.h
+
+Config LCD gpio PIN
+------------------------------------------------------------------------
+r160 | warits | 2010-06-02 03:13:30 +0000 (Wed, 02 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+   A /imap-uboot-union/include/configs/imap_jd.h
+
+Add configuration file jingdian
+------------------------------------------------------------------------
+r159 | warits | 2010-06-02 03:13:11 +0000 (Wed, 02 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/asm-arm/arch-imapx200/denali_data/denali_sam_2x128_270M.h
+
+Add cs and rfrate macros in denali_270M
+------------------------------------------------------------------------
+r158 | warits | 2010-06-01 12:12:52 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imapx.h
+
+Config default bootdelay to 1s
+------------------------------------------------------------------------
+r157 | warits | 2010-06-01 11:29:32 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/board/infotm/imapx/lowlevel_init.S
+   M /imap-uboot-union/include/asm-arm/arch-imapx200/denali_data/denali_sam_1008_252.h
+   M /imap-uboot-union/include/configs/imap_zt.h
+
+Add macro CONFIG_DENALI_CS CONFIG_DENALI_RFRATE CONFIG_IMAPX200_INSP to config denali and InsP, the default values are 0x00000100, 0x06420712 and 0x57
+------------------------------------------------------------------------
+r156 | warits | 2010-06-01 10:53:11 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+
+Modified Makefile to autogenerate uboot version folder
+------------------------------------------------------------------------
+r155 | warits | 2010-06-01 10:37:19 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/configs/imap_zt.h
+
+Add configuration file, zenithink
+------------------------------------------------------------------------
+r154 | warits | 2010-06-01 10:21:08 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/configs/imap1011.h
+
+Add configuration file 1011
+------------------------------------------------------------------------
+r153 | warits | 2010-06-01 09:25:24 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/configs/imap9901.h
+
+Add configuration file 9901
+------------------------------------------------------------------------
+r152 | warits | 2010-06-01 09:23:39 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imapx.h
+
+Add 1080 266 configuration
+------------------------------------------------------------------------
+r150 | warits | 2010-06-01 08:50:42 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/configs/imap_ebook.h
+
+Add configuration file ebook
+------------------------------------------------------------------------
+r149 | warits | 2010-06-01 08:50:22 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/elonex_ebook.gz.h
+
+Ebook zipped logo data
+------------------------------------------------------------------------
+r148 | warits | 2010-06-01 08:50:05 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/oem_func.h
+   M /imap-uboot-union/oem/logo-ebook.c
+   M /imap-uboot-union/oem/wince-ebook.c
+
+Refine ebook bootup codes
+------------------------------------------------------------------------
+r147 | warits | 2010-06-01 08:35:02 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/drivers/video/imapx200_lcd.c
+
+Remove warnning in LCD driver
+------------------------------------------------------------------------
+r146 | warits | 2010-06-01 08:33:31 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/configs/imap7901_linux.h
+   A /imap-uboot-union/include/configs/imap7901_wince.h
+
+Add configuration file: 7901_wince and 7901_linux.
+------------------------------------------------------------------------
+r145 | warits | 2010-06-01 08:12:49 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/configs/imap_coby.h
+   A /imap-uboot-union/include/configs/imap_dev.h
+
+Add configuration file develop and coby
+------------------------------------------------------------------------
+r144 | warits | 2010-06-01 08:11:48 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/include/configs/imapx.h
+
+Global base config file
+------------------------------------------------------------------------
+r143 | warits | 2010-06-01 08:11:24 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/drivers/video/imapx200_lcd.c
+
+Move configurations in LCD driver to global config files and env(tout, bl gpio, panel gpio, lcdcon5)
+------------------------------------------------------------------------
+r142 | warits | 2010-06-01 07:55:58 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/drivers/net/imapx200_gmac.c
+
+Remove macro CONFIG_BOARD_IMAPX200_PRO as it is obviously out of date, there are so many boards today
+------------------------------------------------------------------------
+r141 | warits | 2010-06-01 07:50:44 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/Makefile
+
+The Makefile for moving oem functions
+------------------------------------------------------------------------
+r140 | warits | 2010-06-01 07:49:36 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/cmd_oem.c
+   M /imap-uboot-union/common/main.c
+   M /imap-uboot-union/include/asm-arm/arch-imapx200/imapx200.h
+   M /imap-uboot-union/include/oem_pic.h
+   M /imap-uboot-union/include/oem_pic_data.h
+
+Remove PRODUCT_WINCE and PRODUCT_LINUX marco, imply WINCE_FEATURE instead, and make LINUX the default and pre-enabled feature
+------------------------------------------------------------------------
+r139 | warits | 2010-06-01 07:44:59 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/Makefile
+   M /imap-uboot-union/config.mk
+
+Combine the various versions of uboot into one, add config entries
+------------------------------------------------------------------------
+r138 | warits | 2010-06-01 07:13:10 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/tools/boot_addr.c
+
+This tool give more information when make config
+------------------------------------------------------------------------
+r137 | warits | 2010-06-01 07:12:30 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/cpu/arm1136/imapx200/reset.S
+
+Removed WinCE featured wakeup code, now uboot will only support go directly to the address in INFO0
+------------------------------------------------------------------------
+r136 | warits | 2010-06-01 07:06:01 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/coby.gz.h
+
+Coby gziped logo
+------------------------------------------------------------------------
+r135 | warits | 2010-06-01 07:05:18 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union/include/asm-arm/arch-imapx200/denali_data/denali_sam_2x128_270M.h
+
+Add memory config file, from(original wzf branch)
+------------------------------------------------------------------------
+r134 | warits | 2010-06-01 06:55:29 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   M /imap-uboot-union/common/stdio.c
+   M /imap-uboot-union/cpu/arm1136/cpu.c
+   M /imap-uboot-union/cpu/arm1136/imapx200/timer.c
+   M /imap-uboot-union/drivers/serial/serial_imapx200.c
+   M /imap-uboot-union/include/asm-arm/arch-imapx200/imapx_uart.h
+   M /imap-uboot-union/include/oem_func.h
+   M /imap-uboot-union/nand_spl/board/infotm/imapx/nand_boot.c
+   M /imap-uboot-union/nand_spl/board/infotm/imapx/usb-otg.c
+
+Fix warnnings in these files.
+------------------------------------------------------------------------
+r133 | warits | 2010-06-01 06:50:31 +0000 (Tue, 01 Jun 2010) | 1 line
+Changed paths:
+   D /imap-uboot-union/common/oem_font.c
+   D /imap-uboot-union/common/oem_func.c
+   D /imap-uboot-union/common/oem_globl.c
+   D /imap-uboot-union/common/oem_graphic.c
+   D /imap-uboot-union/common/oem_mmu.c
+   D /imap-uboot-union/common/oem_nand.c
+   D /imap-uboot-union/common/oem_otg.c
+   D /imap-uboot-union/common/oem_pic.c
+   D /imap-uboot-union/common/oem_update.c
+   A /imap-uboot-union/oem
+   A /imap-uboot-union/oem/Makefile
+   A /imap-uboot-union/oem/font.c
+   A /imap-uboot-union/oem/func.c
+   A /imap-uboot-union/oem/graphic.c
+   A /imap-uboot-union/oem/linux.c
+   A /imap-uboot-union/oem/logo-coby.c
+   A /imap-uboot-union/oem/logo-ebook.c
+   A /imap-uboot-union/oem/logo.c
+   A /imap-uboot-union/oem/mmu.c
+   A /imap-uboot-union/oem/multios.c
+   A /imap-uboot-union/oem/nand.c
+   A /imap-uboot-union/oem/otg.c
+   A /imap-uboot-union/oem/pic.c
+   A /imap-uboot-union/oem/update.c
+   A /imap-uboot-union/oem/wince-ebook.c
+   A /imap-uboot-union/oem/wince.c
+
+Saperate oem functions from common to oem folder
+------------------------------------------------------------------------
+r132 | warits | 2010-05-31 02:02:34 +0000 (Mon, 31 May 2010) | 1 line
+Changed paths:
+   A /imap-uboot-union (from /imap-u-boot-dev:131)
+
+Merge the various into ONE, and the new version 1.3 will come.
+------------------------------------------------------------------------
+r123 | warits | 2010-05-27 11:17:02 +0000 (Thu, 27 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_otg.c
+
+OTG code updated, fixed yaffs2 burn size bug(from wzf brance)
+------------------------------------------------------------------------
+r116 | warits | 2010-05-26 12:38:44 +0000 (Wed, 26 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_otg.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/usb-otg.c
+
+OTG code updated(merged from wzf brance)
+------------------------------------------------------------------------
+r103 | warits | 2010-05-21 01:53:07 +0000 (Fri, 21 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/include/configs/imapx.h
+
+Extend maximum NK length to 96M
+------------------------------------------------------------------------
+r96 | warits | 2010-05-20 12:07:22 +0000 (Thu, 20 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/cpu/arm1136/imapx200/timer.c
+   M /imap-u-boot-dev/drivers/mtd/nand/imapx200.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/Makefile
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/boot_main.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/preloader.h
+   M /imap-u-boot-dev/tools/boot_addr.c
+
+Add timer support in preloader. four/fifth slower comparing to the realtimer
+------------------------------------------------------------------------
+r95 | warits | 2010-05-20 09:26:53 +0000 (Thu, 20 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/cmd_oem.c
+   M /imap-u-boot-dev/common/oem_func.c
+   M /imap-u-boot-dev/include/configs/imapx.h
+
+Config dev-board to linux, burn yaffs do not skip 1st block now(This very confusing....)
+------------------------------------------------------------------------
+r94 | warits | 2010-05-20 07:43:58 +0000 (Thu, 20 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_func.c
+   M /imap-u-boot-dev/common/oem_nand.c
+   M /imap-u-boot-dev/drivers/input/imapx200_keybd.c
+   M /imap-u-boot-dev/drivers/mmc/mmc.c
+   M /imap-u-boot-dev/drivers/mmc/sdhci-imap.c
+   M /imap-u-boot-dev/drivers/mtd/nand/nand_util.c
+   M /imap-u-boot-dev/drivers/net/imapx200_gmac.c
+
+Remove a lot of warnnings to make screen clear
+------------------------------------------------------------------------
+r93 | warits | 2010-05-20 07:14:17 +0000 (Thu, 20 May 2010) | 3 lines
+Changed paths:
+   M /imap-u-boot-dev/common/cmd_oem.c
+   M /imap-u-boot-dev/common/main.c
+   M /imap-u-boot-dev/common/oem_func.c
+   M /imap-u-boot-dev/common/oem_nand.c
+   M /imap-u-boot-dev/include/configs/imapx.h
+   M /imap-u-boot-dev/include/oem_func.h
+
+Add yaffs2 image burn command.
+Use 'adr system' and 'adr user' to update system and user images.
+Add yaffs2 image burn USB interface.
+------------------------------------------------------------------------
+r90 | warits | 2010-05-19 05:56:42 +0000 (Wed, 19 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/drivers/mtd/nand/imapx200.c
+
+NAND spl delay modified(From wzf branch)
+------------------------------------------------------------------------
+r79 | warits | 2010-05-08 02:16:41 +0000 (Sat, 08 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_func.c
+   M /imap-u-boot-dev/common/oem_otg.c
+   M /imap-u-boot-dev/include/oem_func.h
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/usb-otg.c
+
+OTG: add linux kernel debug
+------------------------------------------------------------------------
+r77 | warits | 2010-05-06 02:56:59 +0000 (Thu, 06 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_func.c
+
+OEM: add oem_bootl function
+------------------------------------------------------------------------
+r73 | warits | 2010-05-06 02:20:30 +0000 (Thu, 06 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/main.c
+   M /imap-u-boot-dev/common/oem_otg.c
+   M /imap-u-boot-dev/include/configs/imapx.h
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/boot_main.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/usb-otg.c
+
+OTG: fixed white screen bug
+------------------------------------------------------------------------
+r68 | warits | 2010-05-04 01:55:58 +0000 (Tue, 04 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/main.c
+   M /imap-u-boot-dev/common/oem_func.c
+   M /imap-u-boot-dev/common/oem_otg.c
+   M /imap-u-boot-dev/drivers/video/imapx200_lcd.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/boot_main.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/usb-otg.c
+
+fix function oem_factory_check(from wzf branch)
+------------------------------------------------------------------------
+r67 | warits | 2010-05-04 01:55:11 +0000 (Tue, 04 May 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_micron_800_266.h
+
+modify denali reg07
+------------------------------------------------------------------------
+r47 | warits | 2010-04-23 07:13:47 +0000 (Fri, 23 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_otg.c
+
+Merge from wzf, oem_otg code
+------------------------------------------------------------------------
+r41 | warits | 2010-04-19 08:14:16 +0000 (Mon, 19 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_update.c
+   M /imap-u-boot-dev/include/oem_func.h
+
+Add declaration to compile clean_hive
+------------------------------------------------------------------------
+r36 | warits | 2010-04-19 08:05:26 +0000 (Mon, 19 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_update.c
+
+Add clean hive function, from wzf_branch
+------------------------------------------------------------------------
+r31 | warits | 2010-04-19 06:18:37 +0000 (Mon, 19 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/include/configs/imapx.h
+   M /imap-u-boot-dev/include/oem_func.h
+
+Add header
+------------------------------------------------------------------------
+r29 | warits | 2010-04-19 03:41:15 +0000 (Mon, 19 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_func.c
+
+Add macro switch to NK check in factory check function
+------------------------------------------------------------------------
+r28 | warits | 2010-04-19 03:28:12 +0000 (Mon, 19 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_func.c
+
+Add factory burn test function, and NAND disk clear function.
+------------------------------------------------------------------------
+r27 | warits | 2010-04-17 03:19:12 +0000 (Sat, 17 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev
+   M /imap-u-boot-dev/Makefile
+   M /imap-u-boot-dev/drivers/mmc
+   M /imap-u-boot-dev/include
+   M /imap-u-boot-dev/nand_spl
+
+Merged from wzf: MERGE INFO, 19:22
+------------------------------------------------------------------------
+r26 | warits | 2010-04-17 03:18:27 +0000 (Sat, 17 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/drivers/mmc/sdhci-imap.c
+
+Merged from wzf: mmc driver fix
+------------------------------------------------------------------------
+r25 | warits | 2010-04-17 03:17:57 +0000 (Sat, 17 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/Makefile
+   M /imap-u-boot-dev/common/oem_graphic.c
+
+Merged from wzf: oem_graphic debuged for 7"
+------------------------------------------------------------------------
+r24 | warits | 2010-04-17 03:15:41 +0000 (Sat, 17 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/oem_otg.c
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/preloader.h
+   M /imap-u-boot-dev/nand_spl/board/infotm/imapx/usb-otg.c
+
+Merged from wzf: 19:22, usb-otg server
+------------------------------------------------------------------------
+r23 | warits | 2010-04-17 03:15:01 +0000 (Sat, 17 Apr 2010) | 1 line
+Changed paths:
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_sam_2x128_800_133.h (from /uboot_wzf_ce/include/asm-arm/arch-imapx200/denali_data/denali_sam_2x128_800_133.h:22)
+   M /imap-u-boot-dev/include/configs/imapx.h
+   M /imap-u-boot-dev/include/oem_func.h
+
+Merge from wzf: add wzf memory and 800x133 config
+------------------------------------------------------------------------
+r15 | warits | 2010-04-10 09:07:21 +0000 (Sat, 10 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/drivers/video/imapx200_lcd.c
+
+LCD pwm no flick
+------------------------------------------------------------------------
+r14 | warits | 2010-04-07 08:46:08 +0000 (Wed, 07 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/common/cmd_oem.c
+   M /imap-u-boot-dev/common/oem_nand.c
+   M /imap-u-boot-dev/drivers/mtd/nand/nand_base.c
+   M /imap-u-boot-dev/include/oem_func.h
+
+add yaffs2 image burn utilities, oob free configed to 32 byte, and fit with kernel
+------------------------------------------------------------------------
+r12 | warits | 2010-04-03 14:37:55 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   A /imap-u-boot-dev/tools/denaligrep.awk
+
+denaligrep tool to grep data out of imap_init.s
+------------------------------------------------------------------------
+r11 | warits | 2010-04-03 02:42:26 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/include/configs/imapx.h
+
+Config to Linux-dev
+------------------------------------------------------------------------
+r10 | warits | 2010-04-03 02:42:05 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/lib_arm/cache-cp15.c
+
+Fixed dcache off bug(add cache_flush before turning off
+------------------------------------------------------------------------
+r9 | warits | 2010-04-03 02:26:41 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_dini.h
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_mddr_800_200.h
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_micron_800_266.h
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_sam64_800_200.h
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_sam_1008_252.h
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_sam_840_210.h
+   A /imap-u-boot-dev/include/asm-arm/arch-imapx200/denali_data/denali_sam_934_236.h
+
+ADD: denali configuration files for various of memtype
+------------------------------------------------------------------------
+r8 | warits | 2010-04-03 02:25:58 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/cpu_init.S_936_234_bak
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/cpu_init.S_ori_bak
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/imap_init.s
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/imap_init.s.sam_cl4_246M_DDR2_SYNC_OK_3.0304
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/imap_init.s.sam_cl4_264M_Powerup_NoInsP_3.0325
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/imap_init.s.samsung_32Mx16.0329
+   D /imap-u-boot-dev/cpu/arm1136/imapx200/imap_init.s.zeni
+
+REMOVED: Junk denali files in cpu/arm1136/imapx200
+------------------------------------------------------------------------
+r7 | warits | 2010-04-03 02:25:01 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/cpu/arm1136/imapx200/cpu_init.S
+
+Deleted denali_data in cpu_init.S, I will added them to saperate .h file in asm/arch/imapx200
+------------------------------------------------------------------------
+r6 | warits | 2010-04-03 02:20:56 +0000 (Sat, 03 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/include/configs/imapx.h
+
+REMOVED: SDRAM configuration, ADD DDR2 type zeni, pro2
+------------------------------------------------------------------------
+r2 | warits | 2010-04-02 12:11:49 +0000 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+   M /imap-u-boot-dev/CHANGELOG_infotm
+
+Update CHANGELOG_infotm
+------------------------------------------------------------------------
+r1 | warits | 2010-04-02 11:59:29 +0000 (Fri, 02 Apr 2010) | 1 line
+Changed paths:
+	Initialize 1.3 repository.
+
+Import neerly developed u-boot-2009.08 to uboot trunk, from warits branch
+------------------------------------------------------------------------

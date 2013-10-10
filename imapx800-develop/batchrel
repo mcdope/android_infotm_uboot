@@ -1,0 +1,66 @@
+#!/bin/bash
+
+# Script to create header files and links to configure
+# U-Boot for a specific board.
+#
+# Parameters:  Target  Architecture  CPU  Board [VENDOR] [SOC]
+#
+# (C) 2002-2006 DENX Software Engineering, Wolfgang Denk <wd@denx.de>
+#
+
+
+urep=~/web/uboot/hwid
+svnv=`svn info | grep Revi | awk '{print $2}'`
+ofil="u-boot.bin u-boot-nand.bin u-boot.img nand_spl/u-boot-spl.bin u-boot.S spl.S"
+
+
+if [ "$#" -eq "0" ]; then
+builds=`make hwid`
+else
+builds=$@
+fi
+
+echo "The following ID will be compiled, please confirm:"
+for i in $builds; do
+echo $i
+done
+
+echo -n "Type yes to confirm: "
+read ycon
+
+if [ "$ycon" != "yes" ]; then
+exit
+fi
+
+for i in $builds; do
+mkdir $urep/$i/${i}_1.4.$svnv -p
+touch $urep/$i/topver
+topver=`cat $urep/$i/topver`
+
+if [ "$topver" == "" ]; then
+topver=0
+fi
+
+if [ "$svnv" -gt "$topver" ]; then
+echo "Top version for $i: $topver"
+echo "Current SVN version: $svnv"
+# Compile new version
+else
+echo "$i is up to date."
+continue
+fi
+
+echo "Building $i ..."
+make clean > /dev/null
+make mrproper > /dev/null
+make $i O=./out
+make O=./out> /dev/null
+
+cd ./out
+cp $ofil $urep/$i/${i}_1.4.$svnv
+cd ..
+
+echo "$svnv" > $urep/$i/topver
+
+done
+
